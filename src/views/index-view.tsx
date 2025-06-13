@@ -1,8 +1,19 @@
+import { Link } from "react-router";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardAction, CardHeader } from "@/components/ui/card";
+
 function IndexView() {
 	return (
-		<div className="text-destructive">
-			<h1>Hello World!</h1>
-		</div>
+		<Card>
+			<CardHeader>
+				<CardAction>
+					<Button variant="link" asChild>
+						<Link to="/tasks">Manage Tasks</Link>
+					</Button>
+				</CardAction>
+			</CardHeader>
+		</Card>
 	);
 }
 
