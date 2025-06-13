@@ -17,9 +17,9 @@ interface TaskContextContract {
 
 const TaskContext = createContext<TaskContextContract>({
 	tasks: [],
-	createTask: (content) => {},
-	updateTask: (id, content) => {},
-	deleteTask: (id) => {},
+	createTask: () => {},
+	updateTask: () => {},
+	deleteTask: () => {},
 });
 
 function useTask() {
@@ -52,6 +52,7 @@ function TaskProvider({ children }: { children?: React.ReactNode }) {
 
 		const task = tasks[taskIndex];
 		task.content = content;
+		task.updatedAt = new Date();
 
 		const updatedTasks = [...tasks];
 		updatedTasks[taskIndex] = task;
