@@ -16,10 +16,10 @@ export default defineConfig({
 				"maskable-icon-512x512.png",
 			],
 			manifest: {
-				name: "Dailist",
-				short_name: "Dailist",
+				name: "Dailyist",
+				short_name: "Dailyist",
 				description:
-					"Dailist is a daily to-do list app that helps you organize tasks, stay productive, and manage your day with ease.",
+					"Dailyist is a daily to-do list app that helps you organize tasks, stay productive, and manage your day with ease.",
 				theme_color: "#ffffff",
 				icons: [
 					{
